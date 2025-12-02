@@ -1,0 +1,46 @@
+# .gitignore
+
+# --------------------------
+# DEPENDENSI DAN FILE BUILD
+# --------------------------
+
+# Dependency Manager (jika di masa depan menggunakan Node.js/npm)
+/node_modules
+
+# File yang dihasilkan saat proyek dikompilasi (jika Anda menggunakan SASS/TypeScript, dll.)
+/dist
+/build
+
+# --------------------------
+# FILE KONFIGURASI LOKAL/SISTEM
+# --------------------------
+
+# Visual Studio Code / IDE Config (Configuration lokal yang tidak perlu dibagikan)
+.vscode/
+.idea/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# --------------------------
+# CACHE / LOG / TEMPORARY FILES
+# --------------------------
+
+# Log files
+*.log
+npm-debug.log*
+
+# Temporary files created by text editors
+*~
+*.swp
+.fuse_hidden*
+
+# File yang dihasilkan oleh Web Server Lokal (misalnya, Live Server VS Code)
+# Ini mencegah file .html/.css/.js baru yang dibuat oleh server lokal
+# (Biasanya tidak ada dalam proyek statis, tapi ini adalah praktik terbaik)
+/temp/
+/cache/
+```
