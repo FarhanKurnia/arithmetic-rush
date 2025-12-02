@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arithmetic Rush - BSI Day 2025</title>
+    <link rel="icon" type="image/png" href="assets/img/trivia.ico"> 
+    <link rel="shortcut icon" href="assets/img/trivia.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/style.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&family=Orbitron:wght@700;900&family=Oswald:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <audio id="backsound-music" loop preload="none">
+        <source src="assets/audio/backsound.m4a" type="audio/mp4">
+    </audio>
+
+    <audio id="sound-ready">
+        <source src="assets/audio/champions-are-you-ready.MP3" type="audio/mpeg">
+    </audio>
+
+    <audio id="sound-begin">
+        <source src="assets/audio/let-the-game-begin.MP3" type="audio/mpeg">
+    </audio>
+
+    <div class="main-wrapper">
+        <div id="cover-page" class="page active">
+            <div class="cover-content">
+                <img src="assets/img/background.png" alt="BSI Day Cover" class="cover-background-img">
+                <div class="cover-text-overlay">
+                    <p class="small-text top-logo-placeholder">BSI DAY 2025</p>
+                    <h1 class="main-title">CLASH OF MINDS</h1>
+                    <div class="subtitle-box">
+                        <p class="subtitle">TOGETHER WE THINK, TOGETHER WE WIN</p>
+                    </div>
+                    <p class="smart-battle-text">SMART BATTLE - ARITHMETIC RUSH</p>
+                    <button id="start-rules-btn" class="main-btn">LANJUT</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="rules-page" class="page hidden">
+            <div class="rules-content-wrapper">
+                <div class="rules-header">
+                    <h2 class="rules-title">ARITHMETIC RUSH</h2>
+                    <p class="rules-subtitle">Peraturan Permainan</p>
+                </div>
+                <div class="rules-content">
+                    <ol>
+                        </ol>
+                    <button id="start-game-from-rules-btn" class="main-btn start-game-btn">MULAI</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="game-page" class="page hidden">
+            <div class="game-container">
+                <div class="header">
+                    <h1 id="game-title">ARITHMETIC RUSH</h1>
+                    <div id="question-counter">Soal 0 / 0</div>
+                </div>
+                <div class="timer-area">
+                    <div id="timer-bar"></div>
+                    <div id="timer-display">20</div>
+                    <p class="timer-label">WAKTU TERSISA</p>
+                </div>
+                <div class="content-area">
+                    <div id="question-box">
+                        <p id="current-question">Soal akan muncul di sini.</p>
+                    </div>
+                    <div id="answer-box" class="hidden">
+                        <span class="answer-label">JAWABAN BENAR:</span>
+                        <p id="correct-answer-text">---</p>
+                    </div>
+                </div>
+                <div class="controls">
+                    <button id="show-answer-btn" disabled>Tampilkan Jawaban</button>
+                    <button id="next-question-btn" disabled>Soal Selanjutnya</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="finish-page" class="page hidden">
+            <div class="finish-content-overlay">
+                <h2 class="finish-title">SELAMAT!</h2>
+                <p class="finish-subtitle">ARITHMETIC RUSH SELESAI</p>
+                <p class="finish-message">Terima kasih telah berpartisipasi dalam <strong>CLASH OF MINDS</strong>.</p>
+                <p class="finish-message-winner">Pemenang akan diumumkan segera!</p>
+                <button id="restart-game-btn" class="main-btn">MULAI ULANG</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
